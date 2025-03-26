@@ -1,0 +1,812 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RORA Cart Page</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Furnyish Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat|Raleway:400,200,300,500,600,700,800,900,100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script src="js/menu_jquery.js"></script>
+<script src="js/simpleCart.min.js"> </script>
+  <script src="js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+      });
+    });
+  </script>
+  <style>
+/*
+      
+      .col-50 {
+  display: flex;
+  flex: 50%;
+}
+      .row {
+
+  display: flex;
+ 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+*/
+      
+* {
+  box-sizing: border-box;
+}
+
+.row {
+    width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+      .row1{
+          width: 100%;
+          display: flex;
+            
+      }
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+    
+    
+.container {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+}
+      .container1{
+margin:0 206px
+      }
+      
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+    width: 100%;
+}
+      .visaOption{
+          font-size: 45px;
+          padding: 0 38px 0 0; 
+       display: flex;
+       width: 100%;
+      }
+
+.btn {
+  background-color: #026466;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #000000;
+    color: #ffffff;
+    transition: 0.7s all ease-in-out;
+}
+
+a {
+  color: #0b273e;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+      
+</style>
+</head>
+<body>
+<!-- header -->
+<div class="top_bg">
+	<div class="container1">
+		<div class="header_top-sec">
+			<div class="top_right">
+				<ul>
+					
+					<li><a href="contact.html">Contact</a></li>|
+					<li><a href="login.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="top_left">
+				<ul>
+					
+					<li class="top_link"><a href="login.html">My Account</a></li>|					
+				</ul>
+				<div class="social">
+					<ul>
+						<li><a href="https:/www.facebook.com"><i class="facebook"></i></a></li>
+						<li><a href="https:/www.twitter.com"><i class="twitter"></i></a></li>
+						<li><a href="https:/www.dribble.com"><i class="dribble"></i></a></li>	
+						<li><a href="https:/www.google.com"><i class="google"></i></a></li>										
+					</ul>
+				</div>
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="header_top">
+	 <div class="container1">
+		 <div class="logo">
+		 	<img src="roralogo.png" alt=""/></a>			 
+		 </div>
+		 <div class="header_right">	
+			 <div class="login">
+				 <a href="login.html">LOGIN</a>
+			 </div>
+			 <div class="cart box_1">
+				<a href="cart.html">
+					<h3> <span class="simpleCart_total">₹ 0.00</span> 
+						(<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)
+						<img src="images/bag.png" alt="₹0.00"></h3>
+				</a>	
+				<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
+				<div class="clearfix"> </div>
+			 </div>				 
+		 </div>
+		  <div class="clearfix"></div>	
+	 </div>
+</div>
+<!--cart-->
+	 
+<!------>
+<div class="mega_nav">
+	 <div class="container1">
+		 <div class="menu_sec">
+		 <!-- start header menu -->
+		 <ul class="megamenu skyblue">
+			 <li class="active grid"><a class="color1" >Home</a></li>
+			 <li class="grid"><a class="color2" href="#">Furniture</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sofas</h4>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>									
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Tables</h4>
+								<ul>
+									<li><a href="products.html">Coffee Tables</a></li>
+									<li><a href="products.html">Dining Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Wooden Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Bar & Unit Stools</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Beds</h4>
+								<ul>
+									<li><a href="products.html">Single Bed</a></li>
+									<li><a href="products.html">Poster Bed</a></li>
+									<li><a href="products.html">Sofa Cum Bed</a></li>
+									<li><a href="products.html">Bunk Bed</a></li>
+									<li><a href="products.html">King Size Bed</a></li>
+									<li><a href="products.html">Metal Bed</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Seating</h4>
+								<ul>
+									<li><a href="products.html">Wing Chair</a></li>
+									<li><a href="products.html">Accent Chair</a></li>
+									<li><a href="products.html">Arm Chair</a></li>
+									<li><a href="products.html">Metal Chair</a></li>
+									<li><a href="products.html">Folding Chair</a></li>
+									<li><a href="products.html">Bean Bags</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Solid Woods</h4>
+								<ul>
+									<li><a href="products.html">Side Tables</a></li>
+									<li><a href="products.html">T.V Units</a></li>
+									<li><a href="products.html">Dressing Tables</a></li>
+									<li><a href="products.html">Wardrobes</a></li>
+									<li><a href="products.html">Shoe Racks</a></li>
+									<li><a href="products.html">Console Tables</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+			<li><a class="color4" href="#">living</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sofas</h4>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>									
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Tables</h4>
+								<ul>
+									<li><a href="products.html">Coffee Tables</a></li>
+									<li><a href="products.html">Dining Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Wooden Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Bar & Unit Stools</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Beds</h4>
+								<ul>
+									<li><a href="products.html">Single Bed</a></li>
+									<li><a href="products.html">Poster Bed</a></li>
+									<li><a href="products.html">Sofa Cum Bed</a></li>
+									<li><a href="products.html">Bunk Bed</a></li>
+									<li><a href="products.html">King Size Bed</a></li>
+									<li><a href="products.html">Metal Bed</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Seating</h4>
+								<ul>
+									<li><a href="products.html">Wing Chair</a></li>
+									<li><a href="products.html">Accent Chair</a></li>
+									<li><a href="products.html">Arm Chair</a></li>
+									<li><a href="products.html">Metal Chair</a></li>
+									<li><a href="products.html">Folding Chair</a></li>
+									<li><a href="products.html">Bean Bags</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Solid Woods</h4>
+								<ul>
+									<li><a href="products.html">Side Tables</a></li>
+									<li><a href="products.html">T.V Units</a></li>
+									<li><a href="products.html">Dressing Tables</a></li>
+									<li><a href="products.html">Wardrobes</a></li>
+									<li><a href="products.html">Shoe Racks</a></li>
+									<li><a href="products.html">Console Tables</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>				
+				<li><a class="color5" href="#">Kitchen & Dining</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sofas</h4>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>									
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Tables</h4>
+								<ul>
+									<li><a href="products.html">Coffee Tables</a></li>
+									<li><a href="products.html">Dining Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Wooden Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Bar & Unit Stools</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Beds</h4>
+								<ul>
+									<li><a href="products.html">Single Bed</a></li>
+									<li><a href="products.html">Poster Bed</a></li>
+									<li><a href="products.html">Sofa Cum Bed</a></li>
+									<li><a href="products.html">Bunk Bed</a></li>
+									<li><a href="products.html">King Size Bed</a></li>
+									<li><a href="products.html">Metal Bed</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Seating</h4>
+								<ul>
+									<li><a href="products.html">Wing Chair</a></li>
+									<li><a href="products.html">Accent Chair</a></li>
+									<li><a href="products.html">Arm Chair</a></li>
+									<li><a href="products.html">Metal Chair</a></li>
+									<li><a href="products.html">Folding Chair</a></li>
+									<li><a href="products.html">Bean Bags</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Solid Woods</h4>
+								<ul>
+									<li><a href="products.html">Side Tables</a></li>
+									<li><a href="products.html">T.V Units</a></li>
+									<li><a href="products.html">Dressing Tables</a></li>
+									<li><a href="products.html">Wardrobes</a></li>
+									<li><a href="products.html">Shoe Racks</a></li>
+									<li><a href="products.html">Console Tables</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+				<li><a class="color6" href="#">appliances</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sofas</h4>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>									
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Tables</h4>
+								<ul>
+									<li><a href="products.html">Coffee Tables</a></li>
+									<li><a href="products.html">Dining Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Wooden Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Bar & Unit Stools</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Beds</h4>
+								<ul>
+									<li><a href="products.html">Single Bed</a></li>
+									<li><a href="products.html">Poster Bed</a></li>
+									<li><a href="products.html">Sofa Cum Bed</a></li>
+									<li><a href="products.html">Bunk Bed</a></li>
+									<li><a href="products.html">King Size Bed</a></li>
+									<li><a href="products.html">Metal Bed</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Seating</h4>
+								<ul>
+									<li><a href="products.html">Wing Chair</a></li>
+									<li><a href="products.html">Accent Chair</a></li>
+									<li><a href="products.html">Arm Chair</a></li>
+									<li><a href="products.html">Metal Chair</a></li>
+									<li><a href="products.html">Folding Chair</a></li>
+									<li><a href="products.html">Bean Bags</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Solid Woods</h4>
+								<ul>
+									<li><a href="products.html">Side Tables</a></li>
+									<li><a href="products.html">T.V Units</a></li>
+									<li><a href="products.html">Dressing Tables</a></li>
+									<li><a href="products.html">Wardrobes</a></li>
+									<li><a href="products.html">Shoe Racks</a></li>
+									<li><a href="products.html">Console Tables</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>				
+			
+				<li><a class="color7" href="#">Decor</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Sofas</h4>
+								<ul>
+									<li><a href="products.html">All Sofas</a></li>
+									<li><a href="products.html">Fabric Sofas</a></li>
+									<li><a href="products.html">Leather Sofas</a></li>
+									<li><a href="products.html">L-shaped Sofas</a></li>
+									<li><a href="products.html">Love Seats</a></li>									
+									<li><a href="products.html">Wooden Sofas</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Tables</h4>
+								<ul>
+									<li><a href="products.html">Coffee Tables</a></li>
+									<li><a href="products.html">Dining Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Wooden Tables</a></li>
+									<li><a href="products.html">Study Tables</a></li>
+									<li><a href="products.html">Bar & Unit Stools</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Beds</h4>
+								<ul>
+									<li><a href="products.html">Single Bed</a></li>
+									<li><a href="products.html">Poster Bed</a></li>
+									<li><a href="products.html">Sofa Cum Bed</a></li>
+									<li><a href="products.html">Bunk Bed</a></li>
+									<li><a href="products.html">King Size Bed</a></li>
+									<li><a href="products.html">Metal Bed</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Seating</h4>
+								<ul>
+									<li><a href="products.html">Wing Chair</a></li>
+									<li><a href="products.html">Accent Chair</a></li>
+									<li><a href="products.html">Arm Chair</a></li>
+									<li><a href="products.html">Metal Chair</a></li>
+									<li><a href="products.html">Folding Chair</a></li>
+									<li><a href="products.html">Bean Bags</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Solid Woods</h4>
+								<ul>
+									<li><a href="products.html">Side Tables</a></li>
+									<li><a href="products.html">T.V Units</a></li>
+									<li><a href="products.html">Dressing Tables</a></li>
+									<li><a href="products.html">Wardrobes</a></li>
+									<li><a href="products.html">Shoe Racks</a></li>
+									<li><a href="products.html">Console Tables</a></li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>				
+			</ul>
+			   <div class="search">
+				 <form>
+					<input type="text" value="" placeholder="Search...">
+					<input type="submit" value="">
+					</form>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	  </div>
+</div>
+<!---->
+<div class="cart_main">
+	 <div class="container">
+			 <ol class="breadcrumb">
+		  <li>Home</a></li>
+		  <li class="active">Cart</li>
+		 </ol>			
+		 <div class="cart-items">
+			 <h2>My Shopping Bag (2)</h2>
+				<script>$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cart-header').fadeOut('slow', function(c){
+							$('.cart-header').remove();
+						});
+						});	  
+					});
+			   </script>
+			 <div class="cart-header">
+				 <div class="close1"> </div>
+				 <div class="cart-sec">
+						<div class="cart-item cyc">
+							 <img src="9.jpeg"/>
+						</div>
+					   <div class="cart-item-info">
+							 <h3>Lounge Pack<span>Model No: 3578</span></h3>
+							 <h4>₹21000.00</h4>
+							 <p class="qty">Qty ::</p>
+							 <input min="1" type="number" id="quantity" name="quantity" value="1" class="form-control input-small">
+					   </div>
+					   <div class="clearfix"></div>
+						<div class="delivery">
+							 <p>Service Charges::₹50.00</p>							 
+				        </div>						
+				  </div>
+			 </div>
+			 <script>$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+							$('.cart-header2').fadeOut('slow', function(c){
+						$('.cart-header2').remove();
+					});
+					});	  
+					});
+			 </script>
+			 <div class="cart-header2">
+				 <div class="close2"> </div>
+				  <div class="cart-sec">
+						<div class="cart-item">
+							 <img src="12.jpeg"/>
+						</div>
+					   <div class="cart-item-info">
+							 <h3>Indoor Organiser<span>Model No: 8768</span></h3>
+							 <h4>₹8000.00</h4>
+							 <p class="qty">Qty ::</p>
+							 <input min="1" type="number" id="quantity" name="quantity" value="1" class="form-control input-small">
+					   </div>
+					   <div class="clearfix"></div>
+						<div class="delivery">
+							 <p>Service Charges::₹50.00</p>							
+				        </div>						
+				  </div>
+			  </div>		
+		 </div>
+		 
+		 <div class="cart-total">
+			 <a class="continue" href="products.html">Continue to basket</a>
+			 <div class="price-details">
+                 <h3><b>Price Details</b></h3>
+				 <span>Total</span>
+				 <span class="total">₹29000.00</span>
+				 <span>Discount</span>
+				 <span class="total">-₹250</span>
+				 <span>Delivery Charges</span>
+				 <span class="total">₹100.00</span>
+				 <div class="clearfix"></div>				 
+			 </div>	
+			 <h4 class="last-price">TOTAL</h4>
+			 <span class="total final">₹28850.00</span>
+			 <div class="clearfix"></div>
+			 
+			
+  
+			</div>
+         <div class="row">
+          
+
+            <h3 style="    width: 100%; display: flex; align-items: center;    justify-content: center;     font-size: 32px; margin-top: 23px;">Payment</h3>
+             <div class="row1">               <input type="checkbox" checked="checked" name="sameadr">  
+                    <label style="display: inline-block; padding-left: 5px" for="cod" ><strong>Cash on Delivery</strong></label>
+                </div>
+             <div class="row1">
+             <input type="checkbox"   >  
+            <label style="display: inline-block; padding-left: 5px" for="card" ><strong>Credit/Debit Card</strong></label>
+             </div>
+            <div class="icon-container visOption">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Johann Clark">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="8620-4567-2104-6978">
+            <div class="row">
+              <div class="col-50">
+            <label for="expmonthyear">Expiry Month/Year</label>
+            <input type="text" id="exp" name="exp" placeholder="11/20">
+              </div>
+              <div class="col-50"><br>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="864">
+              </div>
+            </div>
+          
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <button onClick="showAlert()" class="btn">Place Order</button>
+	 </div>
+</div>
+               
+
+<!---->
+<div class="footer-content"  style="background-color: #666666; margin-top: 50px;">
+	 <div class="container1">
+		 <div class="ftr-grids">
+			 <div class="col-md-3 ftr-grid">
+				 <h4 style="color: #eaeaea">About Us</h4>
+				 <ul>
+					 <li><a href="#" style="color: #ebebeb">Who We Are</a></li>
+					 <li><a href="contact.html" style="color: #ebebeb">Contact Us</a></li>
+					 <li><a href="#" style="color: #ebebeb">Team</a></li>
+									 
+				 </ul>
+			 </div>
+			 
+			 <div class="col-md-3 ftr-grid">
+				 <h4 style="color: #eaeaea">Your account</h4>
+				 <ul>
+					 <li><a href="account.html" style="color: #ebebeb">Your Account</a></li>
+					 
+					 <li><a href="login.html" style="color: #ebebeb">Track your order</a></li>					 					 
+				 </ul>
+			 </div>
+			 <div class="col-md-3 ftr-grid">
+				 <h4 style="color: #eaeaea">Categories</h4>
+				 <ul>
+					 <li><a href="#" style="color: #ebebeb"> Furniture</a></li>
+					 <li><a href="#" style="color: #ebebeb"> Bean Bags</a></li>
+					 <li><a href="#" style="color: #ebebeb"> Decor</a></li>
+					 <li><a href="#" style="color: #ebebeb"> Kitchen & Dining</a></li>
+					 <li><a href="#" style="color: #ebebeb"> Bed & Bath</a></li>
+					 			 
+				 </ul>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!---->
+
+	  <script>
+  function showAlert() {
+    var myText = "Your order has been placed!";
+    alert (myText);
+  }
+  </script>
+<!---->
+</body>
+</html>
+
